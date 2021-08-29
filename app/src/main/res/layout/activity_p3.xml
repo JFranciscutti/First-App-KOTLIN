@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context="views.activityP3">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Trabajo Practico N°1"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/P3_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Problema 3: Fibonacci"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/P3_ingrese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="Ingrese cualquier numero entero:"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/P3_nro_ingresado"
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/darker_gray"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/P3_ingrese" />
+
+        <Button
+            android:id="@+id/P3_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:text="Calcular"
+            app:layout_constraintEnd_toEndOf="@+id/P3_nro_ingresado"
+            app:layout_constraintStart_toStartOf="@+id/P3_nro_ingresado"
+            app:layout_constraintTop_toBottomOf="@+id/P3_nro_ingresado" />
+
+        <TextView
+            android:id="@+id/P3_sig_nro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:text="El siguiente numero en la sucesion de Fibonacci es:"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/P3_nro_ingresado" />
+
+        <TextView
+            android:id="@+id/P3_resultado"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/P3_sig_nro" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
